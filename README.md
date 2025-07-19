@@ -60,6 +60,12 @@ This project is a **Laravel-based RESTful API** for managing inventory items and
 
 ---
 
+## 📌 API Documentation
+
+- ✅ [View Online Postman Docs](https://documenter.getpostman.com/view/46893943/2sB34kEJpH)
+
+---
+
 ## ⚙️ Setup Instructions
 
 ### Requirements
