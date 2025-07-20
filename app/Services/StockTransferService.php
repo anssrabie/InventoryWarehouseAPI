@@ -38,9 +38,12 @@ class StockTransferService extends BaseService
 
             $transfer = $this->storeResource($data->toArray());
 
-            $this->stockService->checkLowStock($fromStock);
+            DB::afterCommit(function () use ($fromStock) {
+                $this->stockService->checkLowStock($fromStock);
+            });
 
             return $transfer;
+
         });
     }
 }
